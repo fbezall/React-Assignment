@@ -1,24 +1,49 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './components.js/components.css'
+import './components.js/global.css'
+import './components.js/sample-wallpaper.css'
+import './components.js/layout.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div>
+           <nav className="navbar">
+      <div className="container">
+        <a href="#">Hulk</a>
+        <a href="#" className="logo is-active">Mavel</a>
+        <a href="#">Venom</a>
+      </div>
+    </nav>
+
+
+    <header className="header">
+      <div className="container">
+        <h1 className="title">Mavel's Fearless</h1>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae
+          molestias earum eveniet.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="search-bar">
+          <input type="search" placeholder="Search" />
+        </div>
+
+        <div className="sample-wallpaper">
+          <article className="wallpaper">
+            <img src="./img/venom-1.jpg" alt="Wallpaper #1" className="wallpaper" />
+          </article>
+
+          <article className="wallpaper">
+            <img src="./img/hulk-1.jpg" alt="Wallpaper #1" className="wallpaper" />
+          </article>
+
+          
+          <article className="wallpaper">
+            <img src="./img/venom-2.jpg" alt="Wallpaper #1" className="wallpaper" />
+          </article>
+        </div>
+      </div>
+    </header>
     </div>
   );
 }
